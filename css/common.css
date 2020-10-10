@@ -1,0 +1,332 @@
+/* 公共样式 */
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?tomleg');
+  src: url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+    url('../fonts/icomoon.woff?tomleg') format('woff'),
+    url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+}
+img {
+  vertical-align: middle;
+}
+input,
+button {
+  border: none;
+  outline: none;
+}
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+.style_red {
+  color: #c81623 !important;
+}
+
+/* 快捷导航栏start */
+.pxg_shortcut {
+  height: 31px;
+  line-height: 31px;
+  color: #666666;
+  font-size: 12px;
+  background-color: #f1f1f1;
+}
+.pxg_shortcut li a {
+  color: #666666;
+}
+.pxg_shortcut .login {
+  float: left;
+}
+.pxg_shortcut .login li {
+  float: left;
+}
+.pxg_shortcut_items {
+  float: right;
+}
+.pxg_shortcut_items li {
+  float: left;
+}
+.pxg_shortcut_items li:nth-child(2n) {
+  width: 1px;
+  height: 13px;
+  margin: 9px 16px 0;
+  background-color: #666666;
+}
+.pxg_shortcut_items li.arrow-icon::after {
+  content: '\e91e';
+  font-family: 'icomoon';
+  margin-left: 10px;
+}
+/* 快捷导航栏end */
+
+/* 头部 start */
+.header {
+  position: relative;
+  height: 106px;
+}
+.logo {
+  position: relative;
+  width: 171px;
+  height: 61px;
+}
+.logo a {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  top: 27px;
+  left: 0;
+  width: 171px;
+  height: 61px;
+  text-indent: -9999px;
+  background-image: url(../images/logo.png);
+}
+.pxg_shortcut_search {
+  position: absolute;
+  top: 26px;
+  left: 347px;
+  width: 538px;
+  height: 36px;
+  border: 2px solid #b1191a;
+}
+.pxg_shortcut_search input {
+  float: left;
+  height: 32px;
+  width: 454px;
+}
+.pxg_shortcut_search button {
+  float: left;
+  width: 80px;
+  height: 32px;
+  color: #fff;
+  background-color: #b1191a;
+}
+.hotwords {
+  position: absolute;
+  top: 70px;
+  left: 359px;
+}
+.hotwords {
+  font-size: 12px;
+}
+.hotwords a {
+  color: #666666;
+  margin: 0 12px;
+}
+.shopcar {
+  position: absolute;
+  top: 26px;
+  left: 997px;
+  width: 140px;
+  height: 36px;
+  border: 2px solid #dfdfdf;
+  line-height: 36px;
+  color: #666666;
+  font-size: 12px;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+.shopcar::before {
+  content: '\e93a';
+  font-family: 'icomoon';
+  margin-right: 7px;
+  color: #da5555;
+}
+.shopcar::after {
+  content: '\e920';
+  font-family: 'icomoon';
+  margin-left: 15px;
+}
+.shopcar .count {
+  position: absolute;
+  top: -5px;
+  left: 105px;
+  display: inline-block;
+  height: 14px;
+  line-height: 14px;
+  padding: 0 5px;
+  border-radius: 7px 7px 7px 0;
+  font-style: normal;
+  color: #fff;
+  background-color: #e60012;
+}
+/* 头部 end */
+
+/* 导航栏 start */
+.nav {
+  width: 100%;
+  height: 47px;
+  border-bottom: 2px solid #b1191a;
+}
+.pyg_category {
+  float: left;
+}
+.pyg_category_dt {
+  width: 209px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  color: #fff;
+  background-color: #b1191a;
+}
+.pyg_category_dd {
+  width: 209px;
+  height: 465px;
+  margin-top: 2px;
+  background-color: #c81623;
+}
+.pyg_category_dd li {
+  position: relative;
+  margin-left: 2px;
+  padding-left: 10px;
+  height: 31px;
+  line-height: 31px;
+  font-size: 14px;
+  color: #fff;
+}
+.pyg_category_dd li::after {
+  position: absolute;
+  top: 50%;
+  right: 11px;
+  margin-top: -16px;
+  content: '\e920';
+  font-family: 'icomoon';
+}
+.pyg_category_dd li:hover {
+  background-color: #fff;
+}
+.pyg_category_dd li a {
+  color: #fff;
+}
+.pyg_category_dd li:hover a {
+  color: #c81623;
+}
+.pyg_navitems {
+  float: left;
+}
+.pyg_navitems ul {
+  margin-left: 17px;
+}
+.pyg_navitems li {
+  float: left;
+}
+.pyg_navitems li a {
+  display: block;
+  padding: 15px 24px 0;
+  color: #333333;
+}
+/* 导航栏 end */
+
+/* 底部模块制作 start */
+.footer {
+  height: 418px;
+  background-color: #f5f5f5;
+}
+.pyg_service {
+  height: 110px;
+  padding-top: 30px;
+  border-bottom: 1px solid #ccc;
+}
+.pyg_service li {
+  float: left;
+  width: 240px;
+  height: 80px;
+  padding-left: 35px;
+}
+.pyg_service li h5 {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-right: 8px;
+  background-image: url(../images/icons.png);
+  background-repeat: no-repeat;
+}
+.pyg_service li h5.zhengpin {
+  background-position: -253px -2px;
+}
+.pyg_service li h5.jisu {
+  background-position: -253px -53px;
+}
+.pyg_service li h5.wuyou {
+  background-position: -256px -105px;
+}
+.pyg_service li h5.tese {
+  background-position: -257px -156px;
+}
+.pyg_service li h5.bangzhu {
+  background-position: -256px -208px;
+}
+.pyg_service li h4 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.pyg_service li p {
+  font-size: 12px;
+}
+.pyg_help {
+  height: 188px;
+  border-bottom: 1px solid #ccc;
+  padding: 21px 0 0 52px;
+}
+.pyg_help dl {
+  float: left;
+  width: 200px;
+}
+.pyg_help dl:last-child {
+  width: 92px;
+  font-size: 12px;
+  text-align: center;
+}
+.pyg_help dt {
+  margin-bottom: 14px;
+  font-size: 16px;
+  color: #333333;
+}
+.pyg_help dd a {
+  font-size: 12px;
+  color: #000;
+}
+.pyg_copyright {
+  padding-top: 20px;
+  font-size: 10px;
+  text-align: center;
+}
+.links {
+  line-height: 30px;
+}
+.copyright {
+  line-height: 20px;
+}
+/* 底部模块制作 end */
